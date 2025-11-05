@@ -33,4 +33,3 @@ client.loop_start()
 @app.get("/")
 def root():
     return {"status": "Backend running"}
-

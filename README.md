@@ -1,27 +1,18 @@
 # VentDataProject
-Ventilations IoT Project med komplet backend and frontend.
 
+IoT Monitoring stack med Mosquitto (MQTT), QuestDB, FastAPI og Grafana.  
 
-Start med at anvende
+Bygget til Debian 12+ (virker også på Ubuntu og WSL2).
 
+---
 
-mkdir -p ~/iot-monitoring/{backend,edge,db,mosquitto}
+##  Quick Start 
 
-cd ~/iot-monitoring
+### Option 1: Automatic Setup (Recommended)
 
-
-Dette giver følgende mappestruktur
-
-
-~/iot-monitoring/
-
- ├── backend      # Python FastAPI backend
- 
- ├── db           # QuestDB database
- 
- ├── mosquitto    # MQTT broker configs
- 
- └── edge         # ESP32 C++ firmware
- 
-
-Og placerer brugen i roden af projektet.
+1. **Download and run the setup script:**
+   ```bash
+   cd ~
+   wget https://raw.githubusercontent.com/MainWane/VentDataProject/main/setup.sh
+   chmod +x setup.sh
+   ./setup.sh
